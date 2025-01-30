@@ -1,0 +1,32 @@
+red_rain_reclaimed_decision = {
+	picture = {
+        reference = "gfx/interface/illustrations/decisions/decision_smith.dds"
+    }
+	
+	desc = red_rain_reclaimed_decision_desc
+	selection_tooltip = red_rain_reclaimed_decision_tooltip
+
+	is_shown = {
+		any_character_artifact = {
+			has_artifact_modifier = vs_red_rain_modifier
+		}
+        not = {
+            has_culture = ironborn
+        }
+	}
+    is_valid = {
+        or = {
+            has_dynasty = dynn_Reyne
+            has_culture = westerman
+        }
+		prestige_level = 3
+	}
+	effect = {
+		trigger_event = red_reyne_artifacts.001
+	}
+	cost = {
+        gold = 500
+    }
+
+	ai_check_interval = 5
+}

@@ -1,0 +1,7 @@
+vs_red_rain_westerman_modifier = {
+	prowess_no_portrait = 11
+	monthly_dynasty_prestige_mult = 0.05
+	monthly_prestige = 0.2
+	domain_tax_mult = 0.05
+    knight_effectiveness_mult = .2
+}

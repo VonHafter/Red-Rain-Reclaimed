@@ -1,0 +1,18 @@
+namespace = red_reyne_artifacts
+red_reyne_artifacts.001 = { # Use comments (like this one!) to put the event name here, this way other scripters can find the event you are working on without knowing the ID.
+	type = character_event
+    hidden = yes
+
+    immediate = {
+        any_character_artifact = {
+            limit {
+                has_artifact_modifier = vs_red_rain_modifier
+            }
+            save_scope_as = red_rain_artifact_001
+		}
+        scope:red_rain_artifact_001 = {
+            remove_artifact_modifier = vs_red_rain_modifier
+            add_artifact_modifier = vs_red_rain_westerman_modifier
+        }
+    }
+}
